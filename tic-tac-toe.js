@@ -38,3 +38,23 @@ window.addEventListener('load',function(){
                 if (arrayofsquares[i].innerHTML=="X"){
                     xwin++;
                 }
+                else if(arrayofsquares[i].innerHTML=="O"){
+                    owin++;
+                }
+            }
+            if (xwin==3){
+                win=true;
+                return "xwin";
+            }
+            else if(owin==3){
+                win=true;
+                return "owin";
+            }
+        }
+        return "none";
+    }
+
+
+
+
+});
