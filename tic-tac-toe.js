@@ -91,7 +91,6 @@ window.addEventListener('load',function(){
         return "none";
     }
 
-    
     document.querySelector('.btn').addEventListener("click",fresh);
     function fresh(){
         gamewon=false;
