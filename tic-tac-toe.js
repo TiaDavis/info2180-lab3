@@ -9,7 +9,7 @@ window.addEventListener('load',function(){
     }
 
     for(let i=0;i<showboard.length;i++){
-        showboard[i].addEventListener('click', marksqr);
+        showboard[i].addEventListener('click', marksqr); 
     }
     function marksqr(sqr){
         var arrayofsquares=Array.from(showboard);
