@@ -26,4 +26,15 @@ window.addEventListener('load',function(){
         }
 
     }
-
+    
+    function checkwin(){
+        var combo=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,2]]
+        var win=false;
+        var arrayofsquares=Array.from(showboard);
+        for(i=0;i<combo.length;i++){
+            var xwin=0;
+            var owin=0;
+            for(x=0;x<i.length;x++){
+                if (arrayofsquares[i].innerHTML=="X"){
+                    xwin++;
+                }
