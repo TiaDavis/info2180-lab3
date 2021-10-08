@@ -48,7 +48,6 @@ window.addEventListener('load',function(){
         }
 
     }
-
     for(let i=0;i<showboard.length;i++){
         showboard[i].addEventListener('mouseover', hovering);
     }
