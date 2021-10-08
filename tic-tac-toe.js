@@ -16,3 +16,14 @@ window.addEventListener('load',function(){
         var indexes=arrayofsquares.indexOf(sqr.target);
         if(xOro==false && arrayofsquares[indexes].innerHTML==""){
             arrayofsquares[indexes].innerHTML="O"
+             xOro=true
+        }
+        else if(xOro==true && arrayofsquares[indexes].innerHTML=="" ){
+                arrayofsquares[indexes].innerHTML="X"
+                //alert(xOro);
+                xOro=false;
+                xcount++;
+        }
+
+    }
+
